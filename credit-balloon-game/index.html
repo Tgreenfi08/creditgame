@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credit Boost Balloon Pop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-shell">
+    <header class="top-bar" id="score-panel">
+      <div class="score-copy">
+        <p class="caption">Credit Score</p>
+        <h1 id="score-value">0</h1>
+      </div>
+      <div class="score-delta" id="score-delta" aria-live="polite"></div>
+      <button id="audio-toggle" type="button" aria-label="Toggle audio">Audio: Off</button>
+    </header>
+
+    <main id="game-area" aria-label="Credit improvement balloon pop game">
+      <aside class="instructions">
+        Pop balloons that improve credit. Skip harmful choices.
+      </aside>
+    </main>
+
+    <section class="win-overlay" id="win-overlay" aria-live="polite" aria-hidden="true">
+      <div class="confetti-layer" id="confetti-layer"></div>
+      <div class="win-banner">
+        Congratulations! Your understanding of credit is superb!
+      </div>
+    </section>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
